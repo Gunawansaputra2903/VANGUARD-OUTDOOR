@@ -1,0 +1,9 @@
+<?php
+require_once __DIR__.'/../config/koneksi.php';require_once __DIR__.'/../includes/admin_auth.php';
+$sql="SELECT p.id,p.product_name,p.price,p.stock,p.image,c.category_name FROM products p JOIN categories c ON c.id=p.category_id ORDER BY p.id DESC";$result=$conn->query($sql);
+$pageTitle='Kelola Produk';require_once __DIR__.'/layout.php';?>
+<div class="d-flex justify-content-between align-items-center mb-3"><h1 class="h3 mb-0">Kelola Produk</h1><a class="btn btn-primary" href="tambah_produk.php">+ Tambah Produk</a></div>
+<?php if(!empty($_SESSION['flash'])):?><div class="alert alert-info"><?= htmlspecialchars($_SESSION['flash']);unset($_SESSION['flash']);?></div><?php endif;?>
+<div class="card shadow-sm"><div class="card-body table-responsive"><table class="table table-hover align-middle"><thead><tr><th>Foto</th><th>Nama Produk</th><th>Kategori</th><th>Harga</th><th>Stok</th><th>Aksi</th></tr></thead><tbody>
+<?php while($p=$result->fetch_assoc()):?><tr><td><?php if($p['image']&&is_file(__DIR__.'/../uploads/'.$p['image'])):?><img class="thumb" src="../uploads/<?= rawurlencode($p['image']) ?>" alt=""><?php else:?>—<?php endif;?></td><td><?= htmlspecialchars($p['product_name']) ?></td><td><?= htmlspecialchars($p['category_name']) ?></td><td>Rp <?= number_format((float)$p['price'],0,',','.') ?></td><td><?= (int)$p['stock'] ?></td><td><a class="btn btn-sm btn-warning" href="edit_produk.php?id=<?= (int)$p['id'] ?>">Edit</a> <form class="d-inline" method="post" action="hapus_produk.php" onsubmit="return confirm('Yakin ingin menghapus produk ini?')"><input type="hidden" name="id" value="<?= (int)$p['id'] ?>"><?php require_once __DIR__.'/../includes/csrf.php';echo csrf_field();?><button class="btn btn-sm btn-danger">Hapus</button></form></td></tr><?php endwhile;?>
+</tbody></table></div></div><?php require_once __DIR__.'/layout_footer.php';?>

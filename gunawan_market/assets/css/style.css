@@ -1,0 +1,217 @@
+/* Vanguard Outdoor - mempertahankan palet oranye, krem, marun, bata, dan cokelat */
+:root{--gm-orange:#E76814;--gm-cream:#D8D4BC;--gm-maroon:#891A10;--gm-orange-soft:#DC8236;--gm-red:#B8210F;--gm-brown:#714236;--bs-primary:#891A10;--bs-primary-rgb:137,26,16;--bs-link-color:#891A10;--bs-link-hover-color:#E76814;--vo-ink:#34241f;--vo-paper:#f7f5ee}
+html,body{background:var(--vo-paper)!important;color:var(--vo-ink)}
+.market-navbar,.navbar.market-navbar{background:#891A10!important;box-shadow:0 4px 18px rgba(55,20,14,.12)}
+.market-navbar .navbar-brand,.market-navbar .nav-link{color:#fff!important}
+.market-navbar .nav-link{opacity:.92}.market-navbar .nav-link:hover{opacity:1;color:#DC8236!important}
+.brand-mark{width:48px;height:48px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#E76814,#B8210F);color:#fff;font-weight:900;letter-spacing:-1px;box-shadow:0 5px 13px rgba(113,66,54,.18)}
+.brand-mark-nav{width:38px;height:38px;border-radius:10px;font-size:.88rem;box-shadow:none}
+.brand-nav-sub{font-size:.55rem;letter-spacing:1.6px;line-height:1.1;color:#e9d8cc}
+.brand-eyebrow{font-size:.7rem;letter-spacing:2.4px;font-weight:800;color:#891A10}
+.hero{background:linear-gradient(120deg,#E76814,#B8210F 72%,#891A10)!important;color:#fff!important;border-radius:18px;padding:42px 32px;box-shadow:0 10px 26px rgba(113,66,54,.12)}
+.product-card,.card{border:1px solid rgba(113,66,54,.16);border-radius:14px;background:#fffdf8}
+.product-card{height:100%;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
+.product-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(113,66,54,.12)}
+.product-placeholder{height:180px;display:flex;align-items:center;justify-content:center;background:#D8D4BC!important;font-size:3rem;color:#714236}
+.price{color:#B8210F!important;font-weight:700}
+.btn-market,.btn-primary{background:#E76814!important;border-color:#E76814!important;color:#fff!important}
+.btn-market:hover,.btn-primary:hover,.btn-primary:focus{background:#B8210F!important;border-color:#B8210F!important;color:#fff!important}
+.btn-outline-primary{color:#891A10!important;border-color:#891A10!important}
+.btn-outline-primary:hover{background:#891A10!important;border-color:#891A10!important;color:#fff!important}
+.btn-warning{background:#DC8236!important;border-color:#DC8236!important;color:#fff!important}
+.btn-warning:hover{background:#E76814!important;border-color:#E76814!important;color:#fff!important}
+.btn-danger{background:#B8210F!important;border-color:#B8210F!important}
+.btn-secondary{background:#714236!important;border-color:#714236!important}
+.market-footer{background:#D8D4BC!important;color:#714236!important}
+.form-control:focus,.form-select:focus{border-color:#DC8236!important;box-shadow:0 0 0 .2rem rgba(231,104,20,.16)!important}
+.admin-wrap{min-height:70vh}.thumb{width:64px;height:54px;object-fit:cover;border-radius:8px}
+.auth-shell{max-width:520px;padding:12px 0 24px}.auth-card{border-radius:22px;overflow:hidden}.auth-card .card-body{background:#fffdf8}.auth-divider{display:flex;align-items:center;gap:12px;color:#8b7b72;font-size:.82rem;margin:20px 0}.auth-divider:before,.auth-divider:after{content:"";height:1px;background:#e7dfd2;flex:1}
+/* Admin dashboard layout */
+.admin-page{background:#f4f1e9!important;min-height:100vh}.admin-topbar{background:#891A10;color:#fff;padding:13px 22px;box-shadow:0 4px 18px rgba(55,20,14,.13)}.admin-topbar .container-fluid{max-width:1600px}
+.admin-top-brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:900;letter-spacing:1px}.admin-top-brand small{display:block;font-size:.58rem;letter-spacing:2.6px;color:#e9d8cc;font-weight:600}.admin-top-user{font-size:.86rem;color:#f1dfd6}
+.admin-shell{max-width:1600px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:24px;padding:24px}.admin-sidebar{background:#fffdf8;border:1px solid rgba(113,66,54,.14);border-radius:18px;padding:20px 14px;min-height:calc(100vh - 115px);display:flex;flex-direction:column;box-shadow:0 8px 26px rgba(113,66,54,.06)}
+.admin-sidebar-heading{font-size:.67rem;letter-spacing:1.7px;color:#9b8b80;font-weight:800;padding:6px 12px 10px}.admin-nav-link{display:flex;align-items:center;gap:12px;padding:12px;border-radius:11px;text-decoration:none;color:#614b42;font-weight:600;font-size:.92rem;margin:2px 0;transition:all .16s ease}.admin-nav-link:hover{background:#f7e9dc;color:#891A10}.admin-nav-link.active{background:#891A10;color:#fff;box-shadow:0 5px 13px rgba(137,26,16,.18)}.admin-nav-icon{width:24px;text-align:center;font-size:1.1rem}.admin-sidebar-note{border-top:1px solid #eee5dc;padding:17px 10px 2px;color:#714236;font-size:.82rem;font-weight:700}.admin-sidebar-note small{padding-left:17px;color:#9b8b80;font-weight:500}.status-dot{width:8px;height:8px;border-radius:50%;background:#DC8236;display:inline-block;margin-right:8px}
+.admin-main{min-width:0}.admin-content{background:transparent;min-height:70vh}.admin-content>.card{box-shadow:0 5px 18px rgba(113,66,54,.05)!important}.admin-content h1{font-weight:800;color:#4b3028}.admin-content .table thead th{white-space:nowrap;color:#80685d;font-size:.82rem;border-bottom-color:#e5d9cf}.admin-content .table td{vertical-align:middle}
+@media(max-width:991.98px){.admin-shell{grid-template-columns:1fr;padding:14px;gap:14px}.admin-sidebar{min-height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px;padding:12px}.admin-sidebar-heading{grid-column:1/-1;padding:8px 10px 2px}.admin-sidebar-note{grid-column:1/-1;margin-top:8px!important}.admin-content{min-height:auto}}
+@media(max-width:575.98px){.hero{padding:30px 22px}.admin-topbar{padding:10px}.admin-top-brand{font-size:.84rem}.admin-topbar .btn{font-size:.74rem;padding:.32rem .48rem}.admin-sidebar{grid-template-columns:1fr 1fr}.admin-nav-link{font-size:.82rem;padding:10px 8px;gap:7px}}
+
+/* Logo resmi Vanguard Outdoor */
+.brand-logo{display:block;object-fit:contain;background:transparent;border:0;box-shadow:none}
+.brand-logo-nav{width:48px;height:42px;border-radius:0;padding:0;flex:0 0 auto}
+.brand-logo-auth{width:116px;height:78px;border-radius:0;padding:0;margin-left:auto;margin-right:auto}
+.admin-top-brand .brand-logo-nav{box-shadow:none}
+
+
+/* Homepage refresh: minimal modern with landscape hero */
+.vo-hero{
+    position:relative;
+    min-height:390px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    isolation:isolate;
+    border-radius:20px;
+    background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85');
+    background-position:center 48%;
+    background-size:cover;
+    box-shadow:0 14px 34px rgba(55,20,14,.16);
+}
+.vo-hero-shade{
+    position:absolute;inset:0;z-index:-1;
+    background:linear-gradient(90deg,rgba(34,22,18,.82) 0%,rgba(45,31,24,.60) 48%,rgba(45,31,24,.08) 100%);
+}
+.vo-hero-content{max-width:720px;padding:54px 6.5%;color:#fff}
+.vo-eyebrow,.vo-section-kicker{display:block;font-size:.72rem;font-weight:800;letter-spacing:2.3px}
+.vo-eyebrow{color:#ffb36c;margin-bottom:12px}
+.vo-hero h1{font-size:clamp(2.35rem,5vw,4.3rem);font-weight:900;line-height:1.04;letter-spacing:-1.8px;margin:0 0 15px}
+.vo-hero p{font-size:1.08rem;max-width:560px;color:#f8eee5;margin-bottom:25px}
+.vo-hero-button{border-radius:999px;padding:12px 24px;font-size:.95rem;font-weight:700}
+.vo-hero-button span{margin-left:8px}
+.vo-section-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:18px}
+.vo-section-kicker{color:#b66a39;font-size:.63rem;letter-spacing:1.8px;margin-bottom:5px}
+.vo-section-heading h2{font-size:1.55rem;font-weight:850;color:#4b3028;margin:0}
+.vo-text-link{color:#891A10;text-decoration:none;font-weight:700;font-size:.9rem;white-space:nowrap}
+.vo-text-link:hover{color:#E76814}
+.vo-category-card{height:142px;position:relative;display:flex;align-items:end;overflow:hidden;border-radius:15px;background:#e9dfcf;text-decoration:none;box-shadow:0 4px 15px rgba(113,66,54,.07)}
+.vo-category-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(35,23,18,.72),rgba(35,23,18,0) 75%);transition:background .2s}
+.vo-category-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.vo-category-card span{position:relative;z-index:1;color:#fff;font-weight:750;padding:14px 15px;font-size:.95rem}
+.vo-category-card:hover img{transform:scale(1.05)}
+.vo-search-form{display:flex;gap:8px;width:min(100%,340px)}
+.vo-search-form .form-control{border-radius:10px;background:#fff}
+.vo-search-form .btn{border-radius:10px;padding-inline:20px}
+.vo-product-card{border-radius:16px;overflow:hidden;box-shadow:0 5px 18px rgba(113,66,54,.055)}
+.vo-product-image,.vo-product-placeholder{height:205px;object-fit:cover}
+.vo-product-placeholder{display:flex;align-items:center;justify-content:center;background:#eee8dc;font-size:3.2rem}
+.vo-product-name{font-weight:750;color:#3e2c26;min-height:2.5em}
+.vo-stock{font-size:.76rem;color:#47774b;font-weight:650}
+.vo-stock span{font-size:.65rem;margin-right:5px}
+.vo-empty-state{text-align:center;padding:45px 20px;background:#fffdf8;border:1px dashed rgba(113,66,54,.28);border-radius:16px}
+@media(max-width:767.98px){
+    .vo-hero{min-height:340px;border-radius:15px;background-position:58% center}
+    .vo-hero-shade{background:linear-gradient(90deg,rgba(34,22,18,.82),rgba(45,31,24,.42))}
+    .vo-hero-content{padding:38px 25px}
+    .vo-hero p{font-size:.96rem}
+    .vo-section-heading{align-items:flex-start;flex-direction:column}
+    .vo-search-form{width:100%}
+    .vo-category-card{height:125px}
+}
+@media(max-width:420px){
+    .vo-hero h1{font-size:2.25rem}
+    .vo-category-card span{font-size:.82rem;padding:11px}
+}
+
+/* Logo gunung transparan dan foto produk dalam bingkai bersih */
+.vo-product-image{object-fit:contain!important;background:#f3eee5;padding:12px}
+.vo-product-placeholder{background:#f3eee5!important;color:#714236}
+.brand-logo-nav{filter:drop-shadow(0 2px 2px rgba(55,20,14,.10))}
+
+/* Detail produk - Modern Minimal Vanguard Outdoor */
+.vo-detail-page{max-width:1320px;margin:0 auto;padding:8px 0 34px}
+.vo-detail-topline{display:flex;justify-content:space-between;align-items:center;gap:14px;margin:0 0 22px}
+.vo-back-link{display:inline-flex;align-items:center;gap:8px;color:#891A10;text-decoration:none;font-weight:700;font-size:.94rem;transition:color .18s ease}
+.vo-back-link span{font-size:1.2rem;line-height:1}
+.vo-back-link:hover{color:#E76814}
+.vo-detail-breadcrumb{font-size:.78rem;color:#97877d}
+.vo-detail-breadcrumb span{padding:0 6px;color:#c0b3a8}
+.vo-detail-grid{--bs-gutter-x:2rem}
+.vo-detail-gallery{position:relative;min-height:480px;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid rgba(113,66,54,.10);border-radius:22px;background:linear-gradient(145deg,#f1eadf,#faf8f2);padding:44px;box-shadow:0 12px 30px rgba(70,45,34,.055)}
+.vo-detail-gallery:before{content:"";position:absolute;width:72%;height:72%;border-radius:50%;background:rgba(255,255,255,.45);filter:blur(2px)}
+.vo-detail-image{position:relative;z-index:1;display:block;width:100%;height:390px;object-fit:contain;mix-blend-mode:multiply}
+.vo-detail-image-tag{position:absolute;z-index:2;top:20px;left:22px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.76);color:#714236;font-size:.65rem;font-weight:800;letter-spacing:1.5px}
+.vo-detail-image-caption{display:flex;align-items:center;gap:9px;margin:14px 4px 0;color:#84746a;font-size:.82rem}
+.vo-caption-icon{display:inline-flex;align-items:center;justify-content:center;width:25px;height:25px;border-radius:50%;background:#eee5d8;color:#891A10;font-size:1.05rem}
+.vo-detail-info{padding:15px 4px 8px 12px}
+.vo-detail-kicker{margin:0 0 10px;color:#b66a39;font-size:.68rem;font-weight:850;letter-spacing:2px}
+.vo-detail-title{margin:0 0 12px;color:#34241f;font-size:clamp(1.8rem,3vw,2.55rem);font-weight:850;line-height:1.16;letter-spacing:-.8px}
+.vo-detail-price{margin:0;color:#B8210F;font-size:1.65rem;font-weight:850;letter-spacing:-.3px}
+.vo-detail-divider{height:1px;background:linear-gradient(90deg,rgba(113,66,54,.2),rgba(113,66,54,0));margin:23px 0 20px}
+.vo-detail-section-title{margin:0 0 8px;color:#4b3028;font-size:1rem;font-weight:800}
+.vo-detail-description{max-width:620px;margin:0;color:#716158;font-size:.98rem;line-height:1.8}
+.vo-detail-stock-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:24px;padding:14px 16px;border:1px solid rgba(113,66,54,.12);border-radius:13px;background:rgba(255,255,255,.58)}
+.vo-detail-stock-label{color:#716158;font-size:.87rem;font-weight:650}
+.vo-stock-badge{display:inline-flex;align-items:center;gap:7px;color:#36734a;font-size:.82rem;font-weight:750}
+.vo-stock-badge span{font-size:.65rem}
+.vo-stock-empty{color:#B8210F}
+.vo-detail-form{margin-top:23px}
+.vo-quantity-label{display:block;margin-bottom:9px;color:#4b3028;font-size:.88rem;font-weight:750}
+.vo-detail-actions{display:flex;align-items:center;gap:12px}
+.vo-quantity-input{width:104px;min-height:48px;border-radius:11px;border-color:#ded5c9;font-weight:650}
+.vo-add-cart-button{min-height:48px;padding:10px 22px;border-radius:11px;font-weight:750;box-shadow:0 6px 14px rgba(231,104,20,.18)}
+.vo-add-cart-button span{font-size:1.1rem;margin-right:5px}
+.vo-detail-hint{margin:9px 0 0;color:#96877d;font-size:.76rem}
+.vo-detail-benefits{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:28px;padding-top:19px;border-top:1px solid rgba(113,66,54,.12);color:#78675e;font-size:.78rem}
+.vo-detail-benefits span{margin-right:6px;color:#53835b;font-weight:900}
+@media(max-width:991.98px){.vo-detail-page{padding-top:2px}.vo-detail-gallery{min-height:400px}.vo-detail-image{height:330px}.vo-detail-info{padding:8px 2px 0}}
+@media(max-width:575.98px){.vo-detail-topline{align-items:flex-start;flex-direction:column;margin-bottom:16px}.vo-detail-breadcrumb{font-size:.73rem}.vo-detail-gallery{min-height:300px;padding:28px 20px;border-radius:17px}.vo-detail-image{height:250px}.vo-detail-image-caption{font-size:.74rem}.vo-detail-info{padding-top:8px}.vo-detail-title{font-size:1.75rem}.vo-detail-price{font-size:1.4rem}.vo-detail-stock-row{align-items:flex-start;flex-direction:column}.vo-detail-actions{align-items:stretch}.vo-quantity-input{width:88px}.vo-add-cart-button{flex:1;padding-inline:10px;font-size:.86rem}}
+
+
+/* Transaction pages - modern minimal, aligned with product detail */
+.vo-transaction-page{max-width:1320px;margin:0 auto;padding:6px 0 42px;min-height:52vh}
+.vo-page-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin:0 0 24px}
+.vo-page-heading h1{font-size:clamp(1.8rem,3vw,2.35rem);font-weight:850;letter-spacing:-.8px;color:#34241f;margin:3px 0 7px}
+.vo-page-heading p{color:#78675e;margin:0;font-size:.96rem}
+.vo-page-kicker{display:block;color:#b66a39;font-size:.66rem;font-weight:850;letter-spacing:2px}
+.vo-transaction-card{border:1px solid rgba(113,66,54,.13)!important;border-radius:19px!important;background:#fffdf8!important;box-shadow:0 9px 26px rgba(70,45,34,.055)!important;overflow:hidden}
+.vo-cart-card{padding:14px 20px 18px}
+.vo-modern-table{margin:0;color:#49372f;--bs-table-bg:transparent}
+.vo-modern-table thead th{padding:16px 13px;color:#8a7568;font-size:.78rem;letter-spacing:.45px;text-transform:uppercase;font-weight:800;border-bottom:1px solid #e9dfd5;white-space:nowrap}
+.vo-modern-table tbody td{padding:18px 13px;border-color:#eee6dd;vertical-align:middle}
+.vo-modern-table tbody tr:last-child td{border-bottom:0}
+.vo-modern-table .btn{border-radius:9px}
+.vo-cart-summary{display:flex;justify-content:flex-end;padding:18px 8px 0;border-top:1px solid #eee6dd;margin-top:8px}
+.vo-cart-summary .text-end{min-width:240px}
+.vo-summary-label{display:block;color:#938176;font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+.vo-cart-summary h2{color:#34241f;font-weight:800;margin:0 0 12px}
+.vo-cart-summary .price{color:#b8210f}
+.vo-empty-cart{text-align:center;padding:64px 20px;border:1px dashed rgba(113,66,54,.24);border-radius:19px;background:#fffdf8}
+.vo-empty-icon{font-size:2.5rem;margin-bottom:10px}
+.vo-empty-cart h2{font-size:1.35rem;font-weight:800;color:#34241f}
+.vo-empty-cart p{color:#78675e;margin-bottom:20px}
+.vo-checkout-grid{align-items:start}
+.vo-checkout-grid .card-body{padding:28px!important}
+.vo-checkout-grid h1,.vo-checkout-grid h2{color:#34241f;font-weight:800}
+.vo-account-box{padding:17px 18px;margin:18px 0 22px;border:1px solid #e9dfd5;border-radius:13px;background:#f7f4ed;color:#49372f;line-height:1.65}
+.vo-account-box .small{color:#8a7568!important}
+.vo-address-field .form-label{font-weight:750;color:#49372f}
+.vo-address-field textarea{min-height:130px;border-radius:12px;padding:13px;background:#fff}
+.vo-checkout-grid .btn{border-radius:10px;padding:10px 18px;font-weight:700}
+.vo-summary-card{position:sticky;top:24px}
+.vo-summary-card .card-body>h2{font-size:1.2rem;margin-bottom:18px}
+.vo-summary-card .border-bottom{border-color:#eee6dd!important;color:#49372f}
+.vo-summary-card .price{font-size:1.1rem}
+.vo-success-page{padding-top:16px}
+.vo-success-card .card-body{padding:42px!important}
+.vo-success-icon{width:70px;height:70px;display:flex;align-items:center;justify-content:center;border-radius:50%;margin:0 auto 18px;background:#e6f1e8;color:#36734a;font-size:2.2rem;font-weight:800}
+.vo-success-card h1{font-weight:850;color:#34241f}
+.vo-success-card .vo-order-code{border:1px solid #b9d8c1;background:#edf6ef;color:#355e3e;border-radius:13px;padding:17px 20px;line-height:1.8}
+.vo-success-card h2{font-weight:800;color:#49372f;margin-top:24px}
+.vo-success-card .table{--bs-table-bg:transparent}
+.vo-success-card .table th{font-size:.78rem;text-transform:uppercase;letter-spacing:.5px;color:#8a7568}
+.vo-success-card .btn{border-radius:10px;padding:10px 17px;font-weight:700}
+.vo-transaction-page .badge{padding:7px 11px;border-radius:999px;font-weight:750}
+.vo-transaction-page .card .card-body>h2{color:#49372f;font-weight:800}
+.vo-transaction-page .table-responsive{border-radius:12px}
+.vo-transaction-page .btn-outline-primary{border-radius:10px}
+@media(max-width:767.98px){
+ .vo-transaction-page{padding:2px 0 28px}
+ .vo-page-heading{align-items:flex-start;flex-direction:column;margin-bottom:18px}
+ .vo-cart-card{padding:8px 12px 14px}
+ .vo-modern-table{min-width:650px}
+ .vo-cart-summary{padding-top:15px}
+ .vo-checkout-grid .card-body{padding:20px!important}
+ .vo-summary-card{position:static}
+ .vo-success-card .card-body{padding:26px 18px!important}
+ .vo-success-card .btn{width:100%;margin:4px 0}
+}
+
+/* Vanguard Outdoor - Admin dashboard modern refresh */
+.vo-admin-welcome{position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px;overflow:hidden;padding:27px 32px;border-radius:20px;background:linear-gradient(112deg,#fffdf8 0%,#f2e8d9 100%);border:1px solid rgba(113,66,54,.13);box-shadow:0 8px 24px rgba(70,45,34,.045)}
+.vo-admin-welcome-copy{position:relative;z-index:1}.vo-admin-kicker,.vo-admin-section-kicker{display:block;color:#b66a39;font-size:.66rem;font-weight:850;letter-spacing:1.9px}.vo-admin-welcome h1{margin:7px 0 6px;font-size:clamp(1.8rem,3vw,2.35rem);font-weight:900;letter-spacing:-.8px;color:#34241f}.vo-admin-welcome p{margin:0;color:#80685d}.vo-admin-welcome p strong{color:#49372f}.vo-admin-welcome-mark{width:160px;height:110px;display:flex;align-items:center;justify-content:center;opacity:.92}.vo-admin-welcome-mark img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 5px 8px rgba(113,66,54,.10))}
+.vo-admin-alert{display:flex;align-items:center;gap:14px;padding:15px 18px;border:1px solid #f0d1a7;border-radius:14px;background:#fff7e9;color:#65442e;text-decoration:none;transition:transform .16s ease,box-shadow .16s ease}.vo-admin-alert:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(113,66,54,.08);color:#65442e}.vo-admin-alert-icon{width:34px;height:34px;display:grid;place-items:center;flex:0 0 auto;border-radius:11px;background:#f5dfbd;color:#9a571c;font-size:1.15rem;font-weight:900}.vo-admin-alert strong,.vo-admin-alert small{display:block}.vo-admin-alert small{margin-top:2px;color:#94765c;font-size:.8rem}.vo-admin-alert-action{margin-left:auto;color:#9a571c;font-size:.83rem;font-weight:750;white-space:nowrap}.vo-admin-calm{padding:13px 16px;border-radius:12px;background:#edf5ed;color:#456b4a;font-size:.9rem}.vo-admin-calm span{margin-right:8px;font-weight:900}
+.vo-admin-section-heading,.vo-admin-panel-heading{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:14px}.vo-admin-section-heading h2,.vo-admin-panel-heading h2{margin:3px 0 0;color:#49372f;font-size:1.18rem;font-weight:850}.vo-admin-updated{color:#9b8b80;font-size:.75rem}.vo-admin-stat-card{height:100%;min-height:154px;padding:17px 18px 15px;border:1px solid rgba(113,66,54,.13);border-radius:16px;background:#fffdf8;box-shadow:0 6px 18px rgba(70,45,34,.04);transition:transform .18s ease,box-shadow .18s ease}.vo-admin-stat-card:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(70,45,34,.08)}.vo-admin-stat-highlight{border-color:rgba(231,104,20,.28);background:linear-gradient(145deg,#fffdf8,#fff5e9)}.vo-admin-stat-top{display:flex;align-items:center;justify-content:space-between;gap:8px}.vo-admin-stat-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:11px;font-size:1.05rem;font-weight:850}.vo-icon-orange{background:#fce8d8;color:#c45b1b}.vo-icon-cream{background:#efeddf;color:#817b51}.vo-icon-brown{background:#eee4df;color:#714236}.vo-icon-red{background:#f8e2dc;color:#b8210f}.vo-icon-green{background:#e4efe4;color:#4b7950}.vo-admin-stat-label{color:#a29388;font-size:.58rem;font-weight:850;letter-spacing:1.2px}.vo-admin-stat-number{margin-top:13px;color:#34241f;font-size:2rem;line-height:1;font-weight:900;letter-spacing:-1px}.vo-admin-stat-name{margin-top:5px;color:#70594e;font-size:.82rem;font-weight:700}.vo-admin-stat-card>a,.vo-admin-stat-muted{display:inline-block;margin-top:11px;color:#a65325;font-size:.74rem;font-weight:750;text-decoration:none}.vo-admin-stat-card>a:hover{color:#891a10}.vo-admin-stat-card>a b{margin-left:3px}.vo-admin-stat-muted{color:#a29388;font-weight:550}
+.vo-admin-panel{overflow:hidden;border:1px solid rgba(113,66,54,.13);border-radius:17px;background:#fffdf8;box-shadow:0 7px 22px rgba(70,45,34,.045)}.vo-admin-panel-heading{padding:20px 21px 15px;margin:0}.vo-admin-panel-heading>a{color:#9c4e26;font-size:.8rem;font-weight:750;text-decoration:none;white-space:nowrap}.vo-admin-panel-heading>a:hover{color:#891a10}.vo-admin-recent-table{min-width:690px}.vo-admin-recent-table thead th{padding:11px 15px;background:#f8f4ed;color:#988579!important;font-size:.67rem!important;letter-spacing:.5px;text-transform:uppercase;border-top:1px solid #eee5dc;border-bottom:1px solid #eee5dc!important}.vo-admin-recent-table tbody td{padding:13px 15px;color:#5b463d;font-size:.8rem;border-bottom:1px solid #f0e9e1}.vo-admin-recent-table tbody tr:last-child td{border-bottom:0}.vo-admin-recent-table td strong{color:#49372f;font-size:.78rem}.vo-admin-recent-table td small{display:block;margin-top:2px;color:#a29388;font-size:.7rem}.vo-admin-status{display:inline-flex;padding:5px 9px;border-radius:999px;font-size:.67rem;font-weight:800;white-space:nowrap}.vo-admin-status-waiting{background:#fff0cc;color:#94600a}.vo-admin-status-processing{background:#dff3f7;color:#187184}.vo-admin-status-shipped{background:#e2eafa;color:#315a9b}.vo-admin-status-done{background:#e2f1e5;color:#3d7548}.vo-admin-status-cancelled{background:#f8e3e0;color:#a53a30}.vo-admin-status-other{background:#eee;color:#555}.vo-admin-detail-link{width:28px;height:28px;display:grid;place-items:center;border:1px solid #eadbd0;border-radius:9px;color:#9c4e26;font-size:1.25rem;text-decoration:none}.vo-admin-detail-link:hover{background:#891a10;color:white;border-color:#891a10}.vo-admin-empty{display:flex;flex-direction:column;align-items:center;gap:4px;padding:28px 10px;color:#9b8b80}.vo-admin-empty>span{font-size:1.8rem;color:#c9b9aa}.vo-admin-empty strong{color:#70594e;font-size:.9rem}.vo-admin-empty small{font-size:.77rem}
+.vo-admin-quick-panel{padding-bottom:15px}.vo-admin-quick-panel .vo-admin-panel-heading{padding-bottom:10px}.vo-admin-quick-link{display:flex;align-items:center;gap:11px;margin:0 13px;padding:12px 8px;border-bottom:1px solid #f0e9e1;color:#49372f;text-decoration:none;transition:background .15s ease}.vo-admin-quick-link:hover{background:#faf4ed;border-radius:10px;color:#891a10}.vo-quick-icon{width:34px;height:34px;display:grid;place-items:center;flex:0 0 auto;border-radius:10px;background:#f6e9dc;color:#a65325;font-size:1.1rem;font-weight:800}.vo-admin-quick-link>span:nth-child(2){min-width:0;flex:1}.vo-admin-quick-link strong,.vo-admin-quick-link small{display:block}.vo-admin-quick-link strong{font-size:.82rem}.vo-admin-quick-link small{margin-top:2px;color:#9b8b80;font-size:.7rem}.vo-admin-quick-link>b{color:#b68b70}.vo-admin-panel-note{display:flex;align-items:center;gap:10px;margin:15px 20px 0;padding:13px;border-radius:12px;background:#f5f0e7}.vo-admin-panel-note img{width:38px;height:34px;object-fit:contain}.vo-admin-panel-note strong,.vo-admin-panel-note small{display:block}.vo-admin-panel-note strong{color:#714236;font-size:.76rem}.vo-admin-panel-note small{margin-top:2px;color:#9b8b80;font-size:.67rem}
+@media(max-width:1199.98px){.vo-admin-stat-card{min-height:145px}.vo-admin-stat-number{font-size:1.8rem}}
+@media(max-width:767.98px){.vo-admin-welcome{padding:22px 20px}.vo-admin-welcome-mark{width:95px;height:78px}.vo-admin-alert{align-items:flex-start}.vo-admin-alert-action{display:none}.vo-admin-updated{display:none}.vo-admin-section-heading{align-items:flex-start}.vo-admin-stat-card{padding:14px;min-height:142px}.vo-admin-stat-label{font-size:.52rem}.vo-admin-stat-number{font-size:1.7rem}}
+@media(max-width:420px){.vo-admin-welcome-mark{display:none}.vo-admin-stat-icon{width:30px;height:30px}.vo-admin-stat-card{padding:12px}.vo-admin-stat-name{font-size:.75rem}}

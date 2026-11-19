@@ -1,0 +1,14 @@
+<?php
+require_once __DIR__.'/../config/koneksi.php';require_once __DIR__.'/../includes/admin_auth.php';require_once __DIR__.'/../includes/csrf.php';
+$id=filter_input(INPUT_GET,'id',FILTER_VALIDATE_INT);if(!$id||$id<1){http_response_code(404);exit('Produk tidak ditemukan.');}
+$get=$conn->prepare("SELECT * FROM products WHERE id=?");$get->bind_param("i",$id);$get->execute();$p=$get->get_result()->fetch_assoc();$get->close();if(!$p){http_response_code(404);exit('Produk tidak ditemukan.');}
+$error='';
+if($_SERVER['REQUEST_METHOD']==='POST'){verify_csrf();$name=trim($_POST['product_name']??'');$cat=(int)($_POST['category_id']??0);$desc=trim($_POST['description']??'');$price=filter_var($_POST['price']??null,FILTER_VALIDATE_FLOAT);$stock=filter_var($_POST['stock']??null,FILTER_VALIDATE_INT);$imageName=$p['image'];
+if($name===''||$cat<1||$price===false||$price<0||$stock===false||$stock<0)$error='Periksa kembali nama, kategori, harga, dan stok.';
+else{$check=$conn->prepare("SELECT id FROM categories WHERE id=?");$check->bind_param("i",$cat);$check->execute();$ok=$check->get_result()->num_rows>0;$check->close();if(!$ok)$error='Kategori tidak ditemukan.';}
+if(!$error&&!empty($_FILES['image']['name'])){$file=$_FILES['image'];if($file['error']!==UPLOAD_ERR_OK||$file['size']>2*1024*1024)$error='Upload gagal atau ukuran gambar melebihi 2 MB.';else{$info=@getimagesize($file['tmp_name']);$mime=$info['mime']??'';$allowed=['image/jpeg'=>'jpg','image/png'=>'png','image/webp'=>'webp'];if(!$info||!isset($allowed[$mime]))$error='Format gambar harus JPG, PNG, atau WEBP.';else{$newName=bin2hex(random_bytes(16)).'.'.$allowed[$mime];if(move_uploaded_file($file['tmp_name'],__DIR__.'/../uploads/'.$newName))$imageName=$newName;else $error='Gagal menyimpan gambar.';}}}
+if(!$error){$stmt=$conn->prepare("UPDATE products SET category_id=?,product_name=?,description=?,price=?,stock=?,image=? WHERE id=?");$stmt->bind_param("issdisi",$cat,$name,$desc,$price,$stock,$imageName,$id);if($stmt->execute()){if($imageName!==$p['image']&&$p['image']&&is_file(__DIR__.'/../uploads/'.$p['image']))unlink(__DIR__.'/../uploads/'.$p['image']);$_SESSION['flash']='Produk berhasil diperbarui.';header('Location: produk.php');exit;}else $error='Gagal memperbarui produk.';$stmt->close();}}
+$categories=$conn->query("SELECT id,category_name FROM categories ORDER BY category_name");$pageTitle='Edit Produk';require_once __DIR__.'/layout.php';?>
+<h1 class="h3 mb-3">Edit Produk</h1><?php if($error):?><div class="alert alert-danger"><?= htmlspecialchars($error) ?></div><?php endif;?>
+<div class="card shadow-sm"><div class="card-body"><form method="post" enctype="multipart/form-data"><?php echo csrf_field();require __DIR__.'/form_produk.php';?><button class="btn btn-primary">Simpan Perubahan</button> <a class="btn btn-secondary" href="produk.php">Batal</a></form></div></div>
+<?php require_once __DIR__.'/layout_footer.php';?>
